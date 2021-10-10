@@ -1,0 +1,75 @@
+/*Margen, fondo y tipo de letra a nivel global*/
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    background: #34495e;
+}
+
+/*Asignacion de stilo al DIV sin alterar los componentes internos*/
+.Box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+/* Estilo para el titulo dentro del DIV*/
+.Box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*Estilo de los input's(User/Pass) por default*/
+.Box input[type = "Text"], .Box input[Type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .75s;
+}
+
+/*Estilo de los input's(User/Pass) cuando son seleccionados*/
+.Box input[type = "Text"]:focus, .Box input[Type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+    cursor:nw-resize;
+}
+/*Estilo por default del boton enviar*/
+.Box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 4px 50px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 1s;
+}
+
+/*Estilo para el boton enviar*/
+.Box input[type ="submit"]:hover{
+    background: #2ecc71;
+}
+
+/*Estilo para header mas no se como aumenttar tamaño del texto*/
+.Titulo{
+    
+    text-align: center;
+    color: aliceblue;
+}
